@@ -1,0 +1,89 @@
+html, body{
+    font-family: 'Parisienne', sans-serif;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    height: 600px;
+    border: 5px dashed darkblue;
+}
+.move{
+    height: 0px !important;
+    opacity: 0;
+}
+.container div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    margin-top: 40px;
+    height: 370px;
+    border-radius: 5px;
+    transition: all 1s;
+    transform-origin: top;
+    padding: 40px;
+}
+.container div:not(.div-10){
+    padding: 50px;
+    font-size: 100px;
+    text-align: center;
+}
+.container div:not(.div-1){
+    color: ghostwhite;
+}
+.container button{
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    background-color: rgb(158, 65, 32);
+    color: cornsilk;
+    margin: 10px auto 20px auto;
+    font-family: 'Parisienne', cursive;
+    font-size: 40px;
+    display: block;
+    cursor: pointer;
+
+}
+.div-1{
+    background-color: aqua;
+    z-index: 500;
+}
+.div-2{
+    background-color: brown;
+    z-index: 400;
+}
+.div-3{
+    background-color: blueviolet;
+    z-index: 300;
+}
+.div-4{
+    background-color: darkgrey;
+    z-index: 200;
+}
+.div-5{
+    background-color: rgb(84, 84, 146);
+    z-index: 100;
+}
+.div-6{
+    background-color: rgb(42, 42, 73);
+    z-index: 90;
+}
+.div-7{
+    background-color: darkmagenta;
+    z-index: 80;
+}
+.div-8{
+    background-color: darksalmon;
+    z-index: 70;
+}
+.div-9{
+    background-color: forestgreen;
+    z-index: 60;
+}
+
+.div-10{
+    z-index: 50;
+}
+.div-10 video{
+    width: 100%;
+}
